@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  min-height: 100svh;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+svg,
+video {
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* 75ch not higher than that */
+p {
+  max-width: 75ch;
+  text-wrap: pretty;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+  }
+}
+
+/* Header */
+.h-box {
+  position: relative;
+}
+
+.h-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 3.2rem;
+  width: 0.0625rem;
+  height: 8.5rem;
+  background: #c8ccd8;
+}
+
+.link-box {
+  position: relative;
+  writing-mode: vertical-rl;
+  top: 8rem;
+}
+
+/* Welcome Section */
+.welcome-section,
+.welcome-text {
+  position: relative;
+}
+/* Mobile Line In Welcome Section */
+.welcome-section::after {
+  content: "";
+  position: absolute;
+  top: 4.31rem;
+  width: 4.0625rem;
+  height: 0.0625rem;
+  background: #c8ccd8;
+}
+/* Welcome Text For Tablet & Desktop Version */
+/* .welcome-text::after {
+  content: "Welcome";
+  position: absolute;
+  bottom: 2rem;
+  color: #eeeff4;
+  font-family: Spartan;
+  font-size: 7.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12.5rem; 
+  letter-spacing: -0.1875rem;
+}
+
+Header Before Line */
+/* Mobile */
+@media (min-width: 375px) and (max-width: 767px) {
+  .h-box::before {
+    display: none;
+  }
+  .link-box {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1441px) {
+  .h-box::before {
+    left: 5rem;
+  }
+}
+
+/* Tablet & Desktop */
+@media (min-width: 768px) and (max-width: 1441px) {
+  .welcome-text::after {
+    display: block !important;
+  }
+}

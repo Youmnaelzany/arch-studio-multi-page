@@ -1,0 +1,91 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import Header from "@/components/Header.astro";
+---
+
+<Layout title="Frontend Mentor | Arch Studio Website Challenge">
+  <Header />
+  <main>
+    <section
+      class="lg:hero-bg-lg relative flex flex-col gap-[5.19rem] bg-hero-bg bg-cover bg-no-repeat px-8 py-28 md:mx-24 md:bg-hero-bg-md md:px-[3.62rem] md:py-[11.5rem] lg:mx-[10.31rem] lg:gap-12 lg:px-[11.87rem] lg:py-44"
+    >
+      <div class="flex flex-col justify-center gap-[0.69rem] text-[#fff]">
+        <h1
+          class="w-[19.4375rem] text-[3rem] font-bold leading-[3rem] tracking-[-0.075rem]"
+        >
+          Project Paramour
+        </h1>
+        <p
+          class="w-[19.4375rem] text-lg font-medium leading-[1.5rem] md:w-[28.5625rem] lg:w-[27.8125rem]"
+        >
+          Project made for an art museum near Southwest London. Project Paramour
+          is a statement of bold, modern architecture.
+        </p>
+      </div>
+      <div class="">
+        <a
+          href="/portfolio"
+          class="flex h-[4.5rem] w-[15.75rem] items-center justify-center bg-[#1B1D23] text-lg font-bold leading-[1.5625rem] text-[#fff] transition duration-500 hover:bg-[#60636D]"
+          >See Our Portfolio
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="20"
+            class="ml-4"
+            ><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-width="2"
+              ><path d="M15 1l9 9-9 9M0 10h24"></path></g
+            ></svg
+          >
+        </a>
+      </div>
+      <div class="absolute -left-[5rem] bottom-0 flex sm:max-lg:hidden">
+        <div
+          class="flex h-20 w-20 items-center justify-center bg-[#fff] text-lg font-bold leading-[1.5625rem] text-[#7D828F] active:bg-[#1B1D23] active:text-[#fff]"
+        >
+          <button type="button">01</button>
+        </div>
+        <div
+          class="flex h-20 w-20 items-center justify-center bg-[#fff] text-lg font-bold leading-[1.5625rem] text-[#7D828F] active:bg-[#1B1D23] active:text-[#fff]"
+        >
+          <button type="button">02</button>
+        </div>
+        <div
+          class="flex h-20 w-20 items-center justify-center bg-[#fff] text-lg font-bold leading-[1.5625rem] text-[#7D828F] active:bg-[#1B1D23] active:text-[#fff]"
+        >
+          <button type="button">03</button>
+        </div>
+        <div
+          class="flex h-20 w-20 items-center justify-center bg-[#fff] text-lg font-bold leading-[1.5625rem] text-[#7D828F] active:bg-[#1B1D23] active:text-[#fff]"
+        >
+          <button type="button">04</button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="welcome-section mx-8 flex w-[19.4375rem] flex-col gap-6 pb-28 pt-[8.81rem] md:mx-[6.13rem] md:pb-[14.65rem] md:pt-[15.5rem]"
+    >
+      <h2
+        class="welcome-text text-[3rem] font-bold leading-[3.25rem] tracking-[-0.10713rem] text-[#1B1D23]"
+      >
+        Welcome to Arch Studio
+      </h2>
+      <p class="text-lg font-medium leading-[1.5rem] text-[#60636D]">
+        We have a unique network and skillset to help bring your projects to
+        life. Our small team of highly skilled individuals combined with our
+        large network put us in a strong position to deliver exceptional
+        results.
+      </p>
+      <p class="text-lg font-medium leading-[1.5rem] text-[#60636D]">
+        Over the past 10 years, we have worked on all kinds of projects. From
+        stations to high-rise buildings, we create spaces that inspire and
+        delight.
+      </p>
+      <p class="text-lg font-medium leading-[1.5rem] text-[#60636D]">
+        We work closely with our clients so that we understand the intricacies
+        of each project. This allows us to work in harmony the surrounding area
+        to create truly stunning projects that will stand the test of time.
+      </p>
+    </section>
+  </main>
+</Layout>

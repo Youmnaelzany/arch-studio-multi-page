@@ -1,0 +1,46 @@
+---
+import "@/styles/globals.css";
+---
+
+<header
+  class="h-box flex items-center justify-between bg-[#fff] p-8 md:justify-start md:gap-[3rem] md:pt-14 lg:gap-[4.81rem] lg:pl-1 lg:pt-14"
+>
+  <div class="link-box hidden md:pl-[0.6rem] md:max-xl:block lg:pl-[3.94rem]">
+    <a
+      href="/"
+      class="text-lg font-medium leading-[1.5rem] tracking-[1.125rem] text-[#C8CCD8]"
+      >Home</a
+    >
+  </div>
+  <div class="">
+    <img src="/assets/logo.svg" alt="" class="logo" />
+  </div>
+  <nav class="hidden md:pl-6 md:max-xl:block lg:pl-2">
+    <ul class="flex items-center gap-[3.81rem]">
+      <li class="">
+        <a
+          href="/portfolio"
+          class="cursor-pointer text-lg font-bold leading-[1.5625rem] text-[#7D828F] transition-all duration-500 ease-in-out hover:text-[#1B1D23]"
+          >Portfolio</a
+        >
+      </li>
+      <li class="">
+        <a
+          href="/contact"
+          class="cursor-pointer text-lg font-bold leading-[1.5625rem] text-[#7D828F] transition-all duration-500 ease-in-out hover:text-[#1B1D23]"
+          >About Us
+        </a>
+      </li>
+      <li class="">
+        <a
+          href="/about"
+          class="leading-[1.5625rem cursor-pointer text-lg font-bold text-[#7D828F] transition-all duration-500 ease-in-out hover:text-[#1B1D23]"
+          >Contact</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <div class="md:max-xl:hidden">
+    <img src="/assets/icons/icon-hamburger.svg" alt="" class="icon-hamburger" />
+  </div>
+</header>
