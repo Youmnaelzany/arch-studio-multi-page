@@ -17,11 +17,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "hero-bg": "url('/public/assets/home/mobile/image-hero-paramour.jpg')",
-        "hero-bg-md":
-          "url('/public/assets/home/tablet/image-hero-paramour.jpg')",
-        "hero-bg-lg":
-          "url('/public/assets/home/desktop/image-hero-paramour.jpg')",
+        "hero-bg": "url('/assets/home/mobile/image-hero-paramour.jpg')",
+        "hero-bg-md": "url('/assets/home/tablet/image-hero-paramour.jpg')",
+        "hero-bg-lg": "url('/assets/home/desktop/image-hero-paramour.jpg')",
       },
     },
   },
